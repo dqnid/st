@@ -5,9 +5,9 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "Source Code Pro:pixelsize=16:antialias=true:autohint=true";
+static char *font = "Source Code Pro:pixelsize=18:antialias=true:autohint=true";
 static char *font2[] = { "waffle:pixelsize=10:antialias=true:autohint=true" };
-static int borderpx = 8;
+static int borderpx = 20;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -107,7 +107,7 @@ char *termname = "st-256color";
 unsigned int tabspaces = 4;
 
 /* bg opacity */
-float alpha = 0.95;
+float alpha = 1.0;
 float alphaOffset = 0.0;
 float alphaUnfocus;
 
@@ -116,7 +116,7 @@ static const char *colorname[] = {
 	"#212529", /* hard contrast: #1d2021 / soft contrast: #32302f */
 	"#c1121f",
 	"#25a244",
-	"#ffdd00",
+	"#fcf45d",
 	"#0466c8",
 	"#6f2dbd",
 	"#3da5d9",
@@ -134,7 +134,7 @@ static const char *colorname[] = {
 	/* more colors can be added after 255 to use with DefaultXX */
 	"#edf2f4", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
-	"#030307", /* 258 -> bg */
+	"#101010", /* 258 -> bg */
 	//"#09090a", /* 258 -> bg */
 	"#f8f9fa", /* 259 -> fg */
 };
@@ -157,7 +157,7 @@ unsigned int background = 258;
  * 6: Bar ("|")
  * 7: Snowman ("☃")
  */
-static unsigned int cursorshape = 2;
+static unsigned int cursorshape = 4;
 
 /*
  * Default columns and rows numbers
