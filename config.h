@@ -7,7 +7,7 @@
  */
 static char *font = "Source Code Pro:pixelsize=18:antialias=true:autohint=true";
 static char *font2[] = { "waffle:pixelsize=10:antialias=true:autohint=true" };
-static int borderpx = 20;
+static int borderpx = 16;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -132,7 +132,7 @@ static const char *colorname[] = {
 	"#FEFFFF",
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#edf2f4", /* 256 -> cursor */
+	"#0466c8", /* 256 -> cursor */
 	"#555555", /* 257 -> rev cursor*/
 	"#101010", /* 258 -> bg */
 	//"#09090a", /* 258 -> bg */
